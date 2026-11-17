@@ -27,6 +27,7 @@
 | TOP | 支持个人排序、外部榜单的来源/周期/日期/指标；外部榜需导入核实快照 |
 | 自动更新 | C-more 两个首批资料页、三位演员的 Gfriends 头像引用、演员映射底表 |
 | NGi 映射表 | 根目录 `mapping_actor.xml`，完整底表 + 个人中文名 |
+| 演员资料 | `scripts/profiles.py`：XSlist 批量查询，官方页核对值覆盖并标注 |
 | 中文名头像 | `data/avatars/index.json` 对照表 + `scripts/avatars.py fetch` 本机下载，交给 Inputer 导入 |
 | 变更记录 | 自动更新前保留字段旧值；抓取失败不把资料清空 |
 | 可视浏览 | 姓名搜索、生日排序、资料与履历详情、分榜查看 |
@@ -139,6 +140,26 @@ python3 scripts/avatars.py fetch             # 下载 Emby 中缺头像演员的
 - `--no-ai-fix` 使用未经 AI 放大的原图；`--names-file names.txt` 不连 Emby，按每行一个名字下载。
 - 下载明细写入 `Avatar/avatar-report.json`，包括无匹配的演员名单，可据此人工补图。
 - 匹配基于名字，不做人脸核验；同名不同人的情况由映射表的别名规则控制。
+
+## 演员资料（XSlist 批量 + 官方页覆盖）
+
+生日、身高、三围、罩杯、出生地按两层来源写入 Emby 人员简介：
+
+1. **XSlist**：用映射表的日文名查询 [XSlist](https://xslist.org)，覆盖面广；第三方资料站，不保证每条准确。搜索结果须与日文名完全一致，详情页须出现该姓名，否则不采用。
+2. **官方页**：`data/actors/*.json` 中经官方页核对的字段覆盖 XSlist，简介中标“官方”。
+
+在能访问 Emby 和 XSlist 的电脑或 NAS 上：
+
+```bash
+python3 scripts/profiles.py collect          # 查询 Emby 中演员的资料，缓存到 profiles-cache/xslist.json；每次最多 300 人，可重复运行续查
+python3 scripts/profiles.py plan             # 只读：生成 profiles-plan.json，显示前几条预览
+python3 scripts/profiles.py apply --limit 20 # 写入前 20 人，每人先备份到 emby-backups/
+```
+
+- 写入内容是简介末尾一段 `【演员资料】…【演员资料结束】`，原有简介保留，重复运行只替换这一段；生日字段为空时同时写入 PremiereDate。
+- 确认前 20 人在 Emby 中显示正常后，再用更大的 `--limit` 继续。
+- XSlist 页面格式若有变化导致解析失败，可保存一个详情页，用 `python3 scripts/profiles.py test-page page.html 日文名` 检查。
+- `profiles-cache/`、`profiles-plan.json`、`emby-backups/` 已在 `.gitignore` 中排除。
 
 ## 与 Emby 的关系
 
