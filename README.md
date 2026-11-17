@@ -4,6 +4,10 @@
 
 **首版是可运行的资料库与更新工具，不是已经补全所有演员的全量数据库。** 已核对 3 位演员：miru、明里つむぎ、吉高寧々。当前没有已核实的外部 TOP 榜，个人榜为空，绝不虚构名次。
 
+## Emby 中文演员名、头像与资料
+
+使用 [主 Emby 同步说明](docs/EMBY.md)。运行 `python3 scripts/emby_sync.py plan` 先扫描；API Key 仅在本机输入。
+
 ## 直接查看
 
 - [演员资料目录](docs/CATALOG.md)
@@ -101,7 +105,7 @@ gh repo create actress-library --private --source=. --remote=origin --push
 
 ## 与 NGi / Emby 的关系
 
-这是独立资料库。它**不能直接填入 NGi 的自定义演员映射仓库输入框**；该输入需要 NGi 兼容的 `mapping_actor.xml`，本项目首版没有导出该格式，也未实现 Emby 写入。演员资料目录可直接在 GitHub 查看，后续适配需另行验证格式与接口。
+这是独立资料库。它**不能直接填入 NGi 的自定义演员映射仓库输入框**；该输入需要 NGi 兼容的 `mapping_actor.xml`，本项目没有导出该格式。现在提供独立的主 Emby 人员同步脚本，见 [Emby 使用说明](docs/EMBY.md)：先扫描预览，再按人员 ID 小批量写入。当前覆盖三位演员，尚未在用户 NAS 实测。
 
 ## 检验
 

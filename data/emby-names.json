@@ -1,0 +1,30 @@
+{
+  "miru": {
+    "display_name": "坂道美琉",
+    "match_names": [
+      "miru",
+      "坂道みる",
+      "坂道美琉"
+    ],
+    "portrait_url": "https://cmore.jp/official/img/model/miru/miru.jpg"
+  },
+  "akari-tsumugi": {
+    "display_name": "明里紬",
+    "match_names": [
+      "明里つむぎ",
+      "明里紬"
+    ],
+    "portrait_url": "https://cmore.jp/official/img/model/akari/akari.jpg"
+  },
+  "yoshitaka-nene": {
+    "display_name": "吉高宁宁",
+    "match_names": [
+      "吉高寧々",
+      "吉高 寧々",
+      "吉高宁宁",
+      "吉高寧寧",
+      "Yoshitaka Nene"
+    ],
+    "portrait_url": null
+  }
+}

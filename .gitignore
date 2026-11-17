@@ -5,3 +5,6 @@ __pycache__/
 reports/
 .env
 *.tmp
+
+emby-plan.json
+emby-backups/
