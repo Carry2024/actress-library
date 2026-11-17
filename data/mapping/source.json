@@ -1,0 +1,9 @@
+{
+  "url": "https://raw.githubusercontent.com/li-peifeng/Jav-Actors-Mapping/main/mapping_actor.xml",
+  "repository": "https://github.com/li-peifeng/Jav-Actors-Mapping",
+  "note": "底表暂用 NGi 作者维护的 Jav-Actors-Mapping 精简表；是否与 NGi 内置默认表一致未经官方确认。可用 update-base --file 改为从 NGi 容器拷出的默认表。",
+  "checked_at": "2026-11-17",
+  "last_origin": "https://raw.githubusercontent.com/li-peifeng/Jav-Actors-Mapping/main/mapping_actor.xml",
+  "records": 29056,
+  "sha256": "bb296c8fdf05679371ad3d2209b45f7f8c1d44f60da1f13162f88c4d54eb03a3"
+}
