@@ -27,6 +27,7 @@
 | TOP | 支持个人排序、外部榜单的来源/周期/日期/指标；外部榜需导入核实快照 |
 | 自动更新 | C-more 两个首批资料页、三位演员的 Gfriends 头像引用、演员映射底表 |
 | NGi 映射表 | 根目录 `mapping_actor.xml`，完整底表 + 个人中文名 |
+| 中文名头像 | `data/avatars/index.json` 对照表 + `scripts/avatars.py fetch` 本机下载，交给 Inputer 导入 |
 | 变更记录 | 自动更新前保留字段旧值；抓取失败不把资料清空 |
 | 可视浏览 | 姓名搜索、生日排序、资料与履历详情、分榜查看 |
 
@@ -121,6 +122,23 @@ python3 scripts/mapping.py update-base --file /path/to/mapping_actor.xml  # 改�
 格式：UTF-8，根节点 `<actor>`，每位演员一条 `<a zh_cn="" zh_tw="" jp="" keyword="" />`，keyword 用英文逗号分隔、首尾不加逗号。NGi 实际校验规则未公开，以“验证地址”结果为准。
 
 NGi 输出语言选简体中文时，Emby 里的演员名就是 `zh_cn`。中文名建议只通过本映射表统一；`emby_sync.py` 直接改 Emby 人员名，若与 NGi 写入 NFO 的名字不一致，可能出现重复人员，建议只用它补简介和头像。
+
+## 中文名头像（配合 Gfriends Inputer）
+
+NGi 按本映射表把演员写成中文名后，Gfriends 里大多数头像仍按日文名存放，直接用 Inputer 只能匹配一部分。`data/avatars/index.json` 把映射表里每位演员的中文、繁体、日文名对到 Gfriends 的图片（只用该演员独有的名字，共用别名不参与），由每周刷新 Action 更新。
+
+在能访问 Emby 的电脑或 NAS 上：
+
+```bash
+python3 scripts/avatars.py fetch --dry-run   # 先统计：询问 Emby 地址和 API Key，只读
+python3 scripts/avatars.py fetch             # 下载 Emby 中缺头像演员的头像到 ./Avatar/，文件名为 Emby 中的演员名
+```
+
+然后在 Gfriends Inputer 的 `Config.ini` 把 `Local_Path` 设为该 `Avatar/` 的完整路径（结尾带 `/`），运行 Inputer 完成裁剪和导入。`Avatar/` 已加入 `.gitignore`，不会被提交。
+
+- `--no-ai-fix` 使用未经 AI 放大的原图；`--names-file names.txt` 不连 Emby，按每行一个名字下载。
+- 下载明细写入 `Avatar/avatar-report.json`，包括无匹配的演员名单，可据此人工补图。
+- 匹配基于名字，不做人脸核验；同名不同人的情况由映射表的别名规则控制。
 
 ## 与 Emby 的关系
 
