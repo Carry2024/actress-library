@@ -10,3 +10,5 @@ emby-plan.json
 emby-backups/
 
 Avatar/
+profiles-cache/
+profiles-plan.json
