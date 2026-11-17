@@ -22,6 +22,7 @@ jobs:
       - run: python scripts/library.py validate
       - run: python scripts/mapping.py update-base
       - run: python scripts/mapping.py check
+      - run: python scripts/avatars.py index
       - name: Commit checked data
         run: |
           git config user.name 'github-actions[bot]'
