@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "miru",
+  "name": "miru",
+  "aliases": [],
+  "sources": {
+    "official": {
+      "title": "C-more 官方个人页",
+      "url": "https://cmore.jp/official/model-miru.html",
+      "checked_at": "2026-11-17",
+      "response_sha256": "62b6b938bfd05995b94c2819df8cc570469dc07cd95269f12edbf06332dae92d"
+    }
+  },
+  "profile": {
+    "birthday": {
+      "value": "1999-11-29",
+      "source": "official",
+      "checked_at": "2026-11-17"
+    },
+    "height_cm": {
+      "value": 157,
+      "source": "official",
+      "checked_at": "2026-11-17"
+    },
+    "measurements_cm": {
+      "value": {
+        "bust": 82,
+        "waist": 54,
+        "hip": 84
+      },
+      "source": "official",
+      "checked_at": "2026-11-17"
+    },
+    "cup": {
+      "value": "E",
+      "source": "official",
+      "checked_at": "2026-11-17"
+    }
+  },
+  "career": [
+    {
+      "date": "2018-08",
+      "summary": "以 S1 专属演员身份出道。",
+      "source": "official"
+    },
+    {
+      "date": "2019",
+      "summary": "获得 FANZA 2019 优秀新人女演员奖。",
+      "source": "official"
+    }
+  ],
+  "portraits": [
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/0-Hand-Storage/miru.jpg?t=1635577206",
+      "group": "0-Hand-Storage",
+      "matched_name": "miru.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/7-Moodyz/miru.jpg?t=1772493356",
+      "group": "7-Moodyz",
+      "matched_name": "miru.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/7-S1/miru.jpg?t=1620370960",
+      "group": "7-S1",
+      "matched_name": "miru.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Cmore/miru.jpg?t=1658116271",
+      "group": "8-Cmore",
+      "matched_name": "miru.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Ideapocket/miru.jpg?t=1762816612",
+      "group": "8-Ideapocket",
+      "matched_name": "miru.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/y-Minnano/miru.jpg?t=1658331538",
+      "group": "y-Minnano",
+      "matched_name": "miru.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/z-DMM%28%E9%AA%91%29/AI-Fix-miru.jpg?t=1658322168",
+      "group": "z-DMM(骑)",
+      "matched_name": "miru.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    }
+  ],
+  "history": [],
+  "refresh_source": "official",
+  "notes": []
+}

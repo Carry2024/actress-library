@@ -1,0 +1,514 @@
+{
+  "actors": [
+    {
+      "schema_version": 1,
+      "id": "akari-tsumugi",
+      "name": "明里つむぎ",
+      "aliases": [],
+      "sources": {
+        "official": {
+          "title": "C-more 官方个人页",
+          "url": "https://cmore.jp/official/model-akari.html",
+          "checked_at": "2026-11-17",
+          "response_sha256": "fda13373b2435ccf7c3fe1a0b73acca983621a0bff8fb9b51106a76040af650a"
+        }
+      },
+      "profile": {
+        "birthday": {
+          "value": "1998-03-31",
+          "source": "official",
+          "checked_at": "2026-11-17"
+        },
+        "height_cm": {
+          "value": 157,
+          "source": "official",
+          "checked_at": "2026-11-17"
+        },
+        "measurements_cm": {
+          "value": {
+            "bust": 80,
+            "waist": 58,
+            "hip": 83
+          },
+          "source": "official",
+          "checked_at": "2026-11-17"
+        },
+        "cup": {
+          "value": "B",
+          "source": "official",
+          "checked_at": "2026-11-17"
+        }
+      },
+      "career": [
+        {
+          "date": "2017-03",
+          "summary": "从 Idea Pocket 出道。",
+          "source": "official"
+        },
+        {
+          "date": "2018",
+          "summary": "获得 DMM.R18 2018 特别颁奖嘉宾奖。",
+          "source": "official"
+        }
+      ],
+      "portraits": [
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/0-Hand-Storage/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1649401205",
+          "group": "0-Hand-Storage",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/1-FALENO/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1764198468",
+          "group": "1-FALENO",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/5-Premium/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1744758394",
+          "group": "5-Premium",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Cmore/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-1.jpg?t=1768616957",
+          "group": "8-Cmore",
+          "matched_name": "明里つむぎ-1.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Cmore/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-2.jpg?t=1769525904",
+          "group": "8-Cmore",
+          "matched_name": "明里つむぎ-2.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Cmore/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1658116270",
+          "group": "8-Cmore",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-1.jpg?t=1657944780",
+          "group": "8-GRAPHIS",
+          "matched_name": "明里つむぎ-1.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-2.jpg?t=1657944780",
+          "group": "8-GRAPHIS",
+          "matched_name": "明里つむぎ-2.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-3.jpg?t=1657944780",
+          "group": "8-GRAPHIS",
+          "matched_name": "明里つむぎ-3.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-4.jpg?t=1657944781",
+          "group": "8-GRAPHIS",
+          "matched_name": "明里つむぎ-4.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-5.jpg?t=1657944781",
+          "group": "8-GRAPHIS",
+          "matched_name": "明里つむぎ-5.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-6.jpg?t=1657944780",
+          "group": "8-GRAPHIS",
+          "matched_name": "明里つむぎ-6.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1608131511",
+          "group": "8-GRAPHIS",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Ideapocket/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1610423704",
+          "group": "8-Ideapocket",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Warashi/AI-Fix-%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1608131476",
+          "group": "8-Warashi",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-AVDBS/AI-Fix-%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1610423713",
+          "group": "9-AVDBS",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Javrave/AI-Fix-%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1610423730",
+          "group": "9-Javrave",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/v-Attackers/AI-Fix-%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1658331476",
+          "group": "v-Attackers",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/y-AVDC/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1667007584",
+          "group": "y-AVDC",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/y-Minnano/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1658331552",
+          "group": "y-Minnano",
+          "matched_name": "明里つむぎ.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        }
+      ],
+      "history": [],
+      "refresh_source": "official",
+      "notes": []
+    },
+    {
+      "schema_version": 1,
+      "id": "miru",
+      "name": "miru",
+      "aliases": [],
+      "sources": {
+        "official": {
+          "title": "C-more 官方个人页",
+          "url": "https://cmore.jp/official/model-miru.html",
+          "checked_at": "2026-11-17",
+          "response_sha256": "62b6b938bfd05995b94c2819df8cc570469dc07cd95269f12edbf06332dae92d"
+        }
+      },
+      "profile": {
+        "birthday": {
+          "value": "1999-11-29",
+          "source": "official",
+          "checked_at": "2026-11-17"
+        },
+        "height_cm": {
+          "value": 157,
+          "source": "official",
+          "checked_at": "2026-11-17"
+        },
+        "measurements_cm": {
+          "value": {
+            "bust": 82,
+            "waist": 54,
+            "hip": 84
+          },
+          "source": "official",
+          "checked_at": "2026-11-17"
+        },
+        "cup": {
+          "value": "E",
+          "source": "official",
+          "checked_at": "2026-11-17"
+        }
+      },
+      "career": [
+        {
+          "date": "2018-08",
+          "summary": "以 S1 专属演员身份出道。",
+          "source": "official"
+        },
+        {
+          "date": "2019",
+          "summary": "获得 FANZA 2019 优秀新人女演员奖。",
+          "source": "official"
+        }
+      ],
+      "portraits": [
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/0-Hand-Storage/miru.jpg?t=1635577206",
+          "group": "0-Hand-Storage",
+          "matched_name": "miru.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/7-Moodyz/miru.jpg?t=1772493356",
+          "group": "7-Moodyz",
+          "matched_name": "miru.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/7-S1/miru.jpg?t=1620370960",
+          "group": "7-S1",
+          "matched_name": "miru.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Cmore/miru.jpg?t=1658116271",
+          "group": "8-Cmore",
+          "matched_name": "miru.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Ideapocket/miru.jpg?t=1762816612",
+          "group": "8-Ideapocket",
+          "matched_name": "miru.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/y-Minnano/miru.jpg?t=1658331538",
+          "group": "y-Minnano",
+          "matched_name": "miru.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/z-DMM%28%E9%AA%91%29/AI-Fix-miru.jpg?t=1658322168",
+          "group": "z-DMM(骑)",
+          "matched_name": "miru.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        }
+      ],
+      "history": [],
+      "refresh_source": "official",
+      "notes": []
+    },
+    {
+      "schema_version": 1,
+      "id": "yoshitaka-nene",
+      "name": "吉高寧々",
+      "aliases": [
+        "吉高 寧々",
+        "Yoshitaka Nene"
+      ],
+      "sources": {
+        "official": {
+          "title": "T-POWERS 官方个人页",
+          "url": "https://www.t-powers.co.jp/talent/yoshitakanene/",
+          "checked_at": "2026-11-17"
+        }
+      },
+      "profile": {
+        "birthday": {
+          "value": "1995-12-01",
+          "source": "official",
+          "checked_at": "2026-11-17"
+        },
+        "height_cm": {
+          "value": 155,
+          "source": "official",
+          "checked_at": "2026-11-17"
+        },
+        "measurements_cm": {
+          "value": {
+            "bust": 84,
+            "waist": 56,
+            "hip": 85
+          },
+          "source": "official",
+          "checked_at": "2026-11-17"
+        },
+        "cup": {
+          "value": "C",
+          "source": "official",
+          "checked_at": "2026-11-17"
+        },
+        "birthplace": {
+          "value": "兵庫県",
+          "source": "official",
+          "checked_at": "2026-11-17"
+        }
+      },
+      "career": [],
+      "portraits": [
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/1-FALENO/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-1.jpg?t=1657800812",
+          "group": "1-FALENO",
+          "matched_name": "吉高寧々-1.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/1-FALENO/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85.jpg?t=1608119886",
+          "group": "1-FALENO",
+          "matched_name": "吉高寧々.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/6-Tpowers/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85.jpg?t=1769857760",
+          "group": "6-Tpowers",
+          "matched_name": "吉高寧々.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/7-S1/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85.jpg?t=1608131525",
+          "group": "7-S1",
+          "matched_name": "吉高寧々.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Warashi/AI-Fix-%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85.jpg?t=1608131467",
+          "group": "8-Warashi",
+          "matched_name": "吉高寧々.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-AVDBS/AI-Fix-%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85.jpg?t=1610423710",
+          "group": "9-AVDBS",
+          "matched_name": "吉高寧々.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-1.jpg?t=1684106866",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-1.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-10.jpg?t=1684884399",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-10.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-100.jpg?t=1692660473",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-100.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-101.jpg?t=1692746822",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-101.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-102.jpg?t=1692833187",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-102.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-103.jpg?t=1692919610",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-103.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-104.jpg?t=1693006043",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-104.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-105.jpg?t=1693092527",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-105.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-106.jpg?t=1693178802",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-106.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-107.jpg?t=1693265209",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-107.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-108.jpg?t=1693351659",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-108.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-109.jpg?t=1693438112",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-109.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-11.jpg?t=1684970788",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-11.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Eightman/%E5%90%89%E9%AB%98%E5%AF%A7%E3%80%85-110.jpg?t=1693524448",
+          "group": "9-Eightman",
+          "matched_name": "吉高寧々-110.jpg",
+          "identity_status": "name_match_only",
+          "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+        }
+      ],
+      "history": [],
+      "refresh_source": null,
+      "notes": [
+        "首版通过网页检索核对。当前运行环境直连官网返回 Site Unavailable，保留人工核对资料，暂不启用自动刷新。"
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "id": "personal",
+      "title": "我的演员 TOP",
+      "kind": "personal",
+      "as_of": "2026-11-17",
+      "period": "个人自选",
+      "metric": "用户手动排序，不代表平台人气",
+      "source_url": null,
+      "entries": []
+    }
+  ]
+}

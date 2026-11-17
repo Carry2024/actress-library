@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>女友资料库 · Actress Library</title>
+<style>
+:root{color-scheme:light;--ink:#25322e;--muted:#63756b;--accent:#26674d;--line:#dce6de}*{box-sizing:border-box}body{margin:0;background:#f6f7f2;color:var(--ink);font:16px/1.7 system-ui,sans-serif}main{max-width:1160px;margin:auto;padding:52px 24px}header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:26px}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.18em;font-weight:700}h1{font-size:42px;line-height:1.2;margin:14px 0}h2{font-size:22px;margin:0 0 8px}p{margin:8px 0;color:var(--muted)}a{color:var(--accent)}.tools{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}input,select,button{font:inherit;border:1px solid var(--line);padding:10px 14px;border-radius:8px;background:white;color:var(--ink)}input{flex:1;min-width:200px}button{cursor:pointer}button:hover{border-color:var(--accent)}#cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:18px}.card{border:1px solid var(--line);padding:24px;border-radius:14px;background:#fff}.badge{display:inline-block;font-size:12px;background:#e9f2e9;color:var(--accent);padding:3px 9px;border-radius:20px;margin-bottom:14px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}.facts small{display:block;color:var(--muted)}.facts strong{font-weight:600}details{border-top:1px solid var(--line);padding-top:12px}summary{cursor:pointer;color:var(--accent)}li{margin:7px 0}ul{padding-left:20px}.source{font-size:12px;color:var(--muted)}.empty{padding:24px;background:white;border:1px dashed var(--line);border-radius:12px}.portrait{max-width:140px;max-height:190px;object-fit:cover;border-radius:8px}.rank{font-size:14px;color:var(--accent)}footer{margin-top:36px;color:var(--muted);font-size:13px}@media(max-width:600px){main{padding:30px 16px}h1{font-size:32px}}
+</style>
+<main>
+<header><div class="eyebrow">ACTRESS LIBRARY / 公开资料档案</div><h1>女友资料库</h1><p>姓名、生日、三围与履历。每条资料都有出处，排名按来源与日期独立记录。</p><p id="status" role="status">正在读取资料…</p></header>
+<div class="tools"><input id="search" aria-label="搜索演员姓名或别名" placeholder="搜索姓名 / 别名"><select id="sort" aria-label="排序"><option value="name">姓名排序</option><option value="birthday">生日日期排序</option><option value="height">身高从高到低</option></select><select id="board" aria-label="选择榜单"><option value="">全部资料 · 不代表排名</option></select></div>
+<p id="boardNote"></p><div id="cards"></div>
+<footer>独立资料扩展项目 · 头像候选来自 Gfriends，版权归原权利人。官方公开数据也可能滞后，核对日期不等于资料生效日期。<br>初始版本只包含已核对的资料；缺项留空，不生成虚构信息。</footer>
+</main>
+<script>
+const el=id=>document.getElementById(id);
+const norm=x=>String(x).normalize('NFKC').replace(/\s/g,'').toLowerCase();
+const make=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n};
+const value=(a,k)=>a.profile[k]?.value;
+const link=(label,url)=>{const a=make('a',label);try{if(new URL(url).protocol!=='https:')return make('span',label)}catch{return make('span',label)}a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a};
+let dataset;
+function render(){
+ const selected=dataset.rankings.find(b=>b.id+'@'+b.as_of===el('board').value);
+ const ranks=new Map((selected?.entries||[]).map(e=>[e.actor_id,e.rank]));
+ let list=dataset.actors.filter(a=>norm([a.name,...a.aliases].join(' ')).includes(norm(el('search').value))&&(!selected||ranks.has(a.id)));
+ if(selected)list.sort((a,b)=>ranks.get(a.id)-ranks.get(b.id));
+ else list.sort((a,b)=>el('sort').value==='height'?(value(b,'height_cm')||0)-(value(a,'height_cm')||0):el('sort').value==='birthday'?String(value(a,'birthday')?.slice(5)||'99').localeCompare(String(value(b,'birthday')?.slice(5)||'99')):a.name.localeCompare(b.name));
+ el('boardNote').replaceChildren();
+ if(selected){el('boardNote').append(make('span',`${selected.title} · ${selected.as_of} · ${selected.metric} `));if(selected.source_url)el('boardNote').append(link('查看榜单来源',selected.source_url))}
+ el('cards').replaceChildren();
+ if(!list.length){el('cards').append(make('div',selected&&!selected.entries.length?'这个榜单尚未录入排名；不会自动生成虚构 TOP。':'没有匹配的资料。','empty'));return}
+ for(const a of list){
+  const card=make('article',undefined,'card');
+  card.append(make('div','公开资料 · 附来源','badge'));
+  if(selected)card.append(make('div',`TOP ${ranks.get(a.id)}`,'rank'));
+  card.append(make('h2',a.name),make('p',a.aliases.length?a.aliases.join(' / '):`ID: ${a.id}`));
+  const facts=make('div',undefined,'facts'),m=value(a,'measurements_cm');
+  for(const [label,v]of [['生日',value(a,'birthday')],['身高',value(a,'height_cm')?value(a,'height_cm')+' cm':null],['三围 B / W / H',m?`${m.bust} / ${m.waist} / ${m.hip} cm`:null],['罩杯',value(a,'cup')]]){const box=make('div');box.append(make('small',label),make('strong',v||'尚未核实'));facts.append(box)}
+  card.append(facts);
+  const detail=make('details');detail.append(make('summary','履历与来源'));
+  const events=make('ul');for(const event of a.career){const item=make('li',event.date+' · '+event.summary+' ');item.append(link('来源',a.sources[event.source].url));events.append(item)}
+  detail.append(events);if(!a.career.length)detail.append(make('p','履历尚未核实。'));
+  for(const [k,c]of Object.entries(a.profile)){if(!c)continue;const s=a.sources[c.source],row=make('p',`${k} · 核对 ${c.checked_at} `,'source');row.append(link(s.title,s.url));detail.append(row)}
+  for(const note of a.notes||[])detail.append(make('p',note,'source'));
+  if(a.portraits?.length){const p=make('p');p.append(link('查看 Gfriends 首选头像候选',a.portraits[0].url));detail.append(p,make('p','此为姓名匹配候选，尚未人工确认图片身份。','source'))}
+  card.append(detail);el('cards').append(card);
+ }
+}
+fetch('catalog.json').then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(data=>{dataset=data;el('status').textContent=`已收录 ${data.actors.length} 位演员 · ${data.rankings.filter(b=>b.entries.length).length} 份已录入排名的榜单`;for(const b of data.rankings){const option=make('option',`${b.title} · ${b.as_of}`);option.value=b.id+'@'+b.as_of;el('board').append(option)}for(const id of ['search','sort','board'])el(id).addEventListener('input',render);render()}).catch(()=>{el('status').textContent='资料读取失败。请在仓库根目录运行 python3 -m http.server 8765 --bind 127.0.0.1 --directory docs，再访问 http://127.0.0.1:8765。'});
+</script>
+</html>

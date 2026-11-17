@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "id": "akari-tsumugi",
+  "name": "明里つむぎ",
+  "aliases": [],
+  "sources": {
+    "official": {
+      "title": "C-more 官方个人页",
+      "url": "https://cmore.jp/official/model-akari.html",
+      "checked_at": "2026-11-17",
+      "response_sha256": "fda13373b2435ccf7c3fe1a0b73acca983621a0bff8fb9b51106a76040af650a"
+    }
+  },
+  "profile": {
+    "birthday": {
+      "value": "1998-03-31",
+      "source": "official",
+      "checked_at": "2026-11-17"
+    },
+    "height_cm": {
+      "value": 157,
+      "source": "official",
+      "checked_at": "2026-11-17"
+    },
+    "measurements_cm": {
+      "value": {
+        "bust": 80,
+        "waist": 58,
+        "hip": 83
+      },
+      "source": "official",
+      "checked_at": "2026-11-17"
+    },
+    "cup": {
+      "value": "B",
+      "source": "official",
+      "checked_at": "2026-11-17"
+    }
+  },
+  "career": [
+    {
+      "date": "2017-03",
+      "summary": "从 Idea Pocket 出道。",
+      "source": "official"
+    },
+    {
+      "date": "2018",
+      "summary": "获得 DMM.R18 2018 特别颁奖嘉宾奖。",
+      "source": "official"
+    }
+  ],
+  "portraits": [
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/0-Hand-Storage/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1649401205",
+      "group": "0-Hand-Storage",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/1-FALENO/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1764198468",
+      "group": "1-FALENO",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/5-Premium/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1744758394",
+      "group": "5-Premium",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Cmore/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-1.jpg?t=1768616957",
+      "group": "8-Cmore",
+      "matched_name": "明里つむぎ-1.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Cmore/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-2.jpg?t=1769525904",
+      "group": "8-Cmore",
+      "matched_name": "明里つむぎ-2.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Cmore/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1658116270",
+      "group": "8-Cmore",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-1.jpg?t=1657944780",
+      "group": "8-GRAPHIS",
+      "matched_name": "明里つむぎ-1.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-2.jpg?t=1657944780",
+      "group": "8-GRAPHIS",
+      "matched_name": "明里つむぎ-2.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-3.jpg?t=1657944780",
+      "group": "8-GRAPHIS",
+      "matched_name": "明里つむぎ-3.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-4.jpg?t=1657944781",
+      "group": "8-GRAPHIS",
+      "matched_name": "明里つむぎ-4.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-5.jpg?t=1657944781",
+      "group": "8-GRAPHIS",
+      "matched_name": "明里つむぎ-5.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E-6.jpg?t=1657944780",
+      "group": "8-GRAPHIS",
+      "matched_name": "明里つむぎ-6.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-GRAPHIS/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1608131511",
+      "group": "8-GRAPHIS",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Ideapocket/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1610423704",
+      "group": "8-Ideapocket",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/8-Warashi/AI-Fix-%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1608131476",
+      "group": "8-Warashi",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-AVDBS/AI-Fix-%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1610423713",
+      "group": "9-AVDBS",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/9-Javrave/AI-Fix-%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1610423730",
+      "group": "9-Javrave",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/v-Attackers/AI-Fix-%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1658331476",
+      "group": "v-Attackers",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/y-AVDC/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1667007584",
+      "group": "y-AVDC",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Content/y-Minnano/%E6%98%8E%E9%87%8C%E3%81%A4%E3%82%80%E3%81%8E.jpg?t=1658331552",
+      "group": "y-Minnano",
+      "matched_name": "明里つむぎ.jpg",
+      "identity_status": "name_match_only",
+      "source": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json"
+    }
+  ],
+  "history": [],
+  "refresh_source": "official",
+  "notes": []
+}

@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/gfriends/gfriends",
+  "index_url": "https://raw.githubusercontent.com/gfriends/gfriends/master/Filetree.json",
+  "checked_at": "2026-11-17",
+  "information": {
+    "TotalNum": 104699,
+    "TotalSize": 10335040905,
+    "Timestamp": 1794739091.2805164
+  },
+  "sha256": "7186ba4477ff9aa454c6c42f17a0628f53ba768043361f562ba47910373faf77",
+  "note": "TotalNum 是上游图片数量，不是本库已核对演员数量；图片只保存引用链接。"
+}
