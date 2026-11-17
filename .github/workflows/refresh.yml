@@ -1,4 +1,4 @@
-name: Refresh public profiles and Gfriends references
+name: Refresh public profiles, Gfriends references and actor mapping
 on:
   workflow_dispatch:
   schedule:
@@ -20,12 +20,14 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python scripts/library.py refresh
       - run: python scripts/library.py validate
+      - run: python scripts/mapping.py update-base
+      - run: python scripts/mapping.py check
       - name: Commit checked data
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data docs
+          git add data docs mapping_actor.xml
           if ! git diff --cached --quiet; then
-            git commit -m 'Update sourced profiles and portrait references'
+            git commit -m 'Update sourced profiles, portrait references and actor mapping'
             git push
           fi

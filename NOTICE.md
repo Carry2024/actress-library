@@ -12,3 +12,4 @@
 - 各平台排名的指标与周期不同，分榜存档，不合并为所谓“权威总榜”。
 - 本项目不含成人视频、露骨内容介绍或播放链接。资料页仅用于个人媒体库元数据管理。
 - 代码与数据、图片的权利各自独立；首版暂不为第三方内容授予任何额外许可。
+- 根目录 `mapping_actor.xml` 与 `data/mapping/base_mapping_actor.xml` 的底表来自 https://github.com/li-peifeng/Jav-Actors-Mapping ，该仓库未声明许可证，版权归原维护者；本库仅为个人媒体库元数据管理使用。

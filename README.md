@@ -25,7 +25,8 @@
 | 履历 | 支持出道、改名、获奖等带日期事件；人工核对录入 |
 | 头像 | 自动匹配 Gfriends 现有索引；保存候选链接，未冒充人工身份确认 |
 | TOP | 支持个人排序、外部榜单的来源/周期/日期/指标；外部榜需导入核实快照 |
-| 自动更新 | C-more 两个首批资料页和三位演员的 Gfriends 头像引用 |
+| 自动更新 | C-more 两个首批资料页、三位演员的 Gfriends 头像引用、演员映射底表 |
+| NGi 映射表 | 根目录 `mapping_actor.xml`，完整底表 + 个人中文名 |
 | 变更记录 | 自动更新前保留字段旧值；抓取失败不把资料清空 |
 | 可视浏览 | 姓名搜索、生日排序、资料与履历详情、分榜查看 |
 
@@ -89,23 +90,41 @@ python3 scripts/library.py import-ranking /path/to/verified-ranking.json
 
 同一个榜按日期保存快照，不覆盖历史。首版未接入外部榜自动采集，不将 README 中的某个历史获奖冒充当前人气排名。
 
-## GitHub 创建
+## 仓库可见性
 
-建议先建私有仓库。若在自己的电脑使用 GitHub CLI，解压后进入此目录执行：
+本仓库需保持**公开**：NGi 匿名读取 main 分支的 `mapping_actor.xml`，设置页没有填写令牌的位置，私有仓库无法通过“验证地址”。仓库只存资料、引用链接和映射表，不存图片文件；Emby API Key、`emby-plan.json`、`emby-backups/` 已在 `.gitignore` 中排除，切勿提交。
 
-```bash
-gh auth login
-git init -b main
-git add .
-git commit -m 'Create sourced actress library'
-gh repo create actress-library --private --source=. --remote=origin --push
+## NGi 自定义演员映射仓库
+
+根目录的 `mapping_actor.xml` 供 NGi 读取。在 NGi“设置 → 元数据”开启“自定义演员映射仓库”，地址填：
+
+```
+https://github.com/Carry2024/actress-library
 ```
 
-账号已有同名仓库时更换新仓库名；不要覆盖已有项目。Git 提示作者身份缺失时，使用你自己的 GitHub 提交姓名和邮箱配置。
+点击“验证地址”，通过后保存，在任务空闲时重启后端/容器加载（见 [NGi Wiki：元数据翻译与映射](https://github.com/li-peifeng/NGi/wiki/元数据翻译与映射)）。
 
-## 与 NGi / Emby 的关系
+开启后 NGi 只读这一份文件、停用默认表的自动更新，所以它必须是**完整演员表**，不能只有自己改过的几位。生成方式：
 
-这是独立资料库。它**不能直接填入 NGi 的自定义演员映射仓库输入框**；该输入需要 NGi 兼容的 `mapping_actor.xml`，本项目没有导出该格式。现在提供独立的主 Emby 人员同步脚本，见 [Emby 使用说明](docs/EMBY.md)：先扫描预览，再按人员 ID 小批量写入。当前覆盖三位演员，尚未在用户 NAS 实测。
+- 底表：`data/mapping/base_mapping_actor.xml`，默认取自 [li-peifeng/Jav-Actors-Mapping](https://github.com/li-peifeng/Jav-Actors-Mapping) 的精简表（NGi 作者维护；是否等同 NGi 内置默认表未经官方确认）。
+- 个人中文名：`data/emby-names.json` 的 `display_name` 写入对应条目的 `zh_cn`，`match_names` 补入 `keyword`。可选 `zh_tw`、`jp` 字段覆盖繁体名和日文名。只靠共用别名匹配到多位演员时会报错，不猜测。
+
+```bash
+python3 scripts/mapping.py build        # 修改 emby-names.json 后重新生成
+python3 scripts/mapping.py check        # 校验格式并确认已同步（Actions 每次推送都会跑）
+python3 scripts/mapping.py update-base  # 更新底表并重新生成
+python3 scripts/mapping.py update-base --file /path/to/mapping_actor.xml  # 改用从 NGi 容器拷出的默认表
+```
+
+每周的刷新 Action 也会更新底表；新底表条数比旧表少 10% 以上时停止，不覆盖。
+
+格式：UTF-8，根节点 `<actor>`，每位演员一条 `<a zh_cn="" zh_tw="" jp="" keyword="" />`，keyword 用英文逗号分隔、首尾不加逗号。NGi 实际校验规则未公开，以“验证地址”结果为准。
+
+NGi 输出语言选简体中文时，Emby 里的演员名就是 `zh_cn`。中文名建议只通过本映射表统一；`emby_sync.py` 直接改 Emby 人员名，若与 NGi 写入 NFO 的名字不一致，可能出现重复人员，建议只用它补简介和头像。
+
+## 与 Emby 的关系
+
+主 Emby 人员同步脚本见 [Emby 使用说明](docs/EMBY.md)：先扫描预览，再按人员 ID 小批量写入。当前覆盖三位演员，尚未在用户 NAS 实测。
 
 ## 检验
 
